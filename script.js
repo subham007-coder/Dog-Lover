@@ -6,7 +6,7 @@ let url = "https://dog.ceo/api/breeds/image/random";
 
 async function getRquest() {
     try {
-        let res = await axios(url);
+        let res = await axios.get(url);
         console.log(res.data.message);
         return res.data.message;
     } catch (err) {
